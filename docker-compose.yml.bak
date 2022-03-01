@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+    tax-calculator:
+         container_name: tax-calculator
+         image: thedoomx/tax-calculator-service
+         build:
+             dockerfile: ./Startup/Dockerfile
+         ports: 
+             - "5002:80"
+         restart: on-failure
+         networks: 
+             - tax-calculator-network
+
+networks:
+    tax-calculator-network:
