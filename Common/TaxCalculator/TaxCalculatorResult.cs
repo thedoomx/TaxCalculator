@@ -2,9 +2,9 @@
 {
 	public class TaxCalculatorResult
 	{
-		public TaxCalculatorResult(double totalRemaining)
+		public TaxCalculatorResult(double grossIncome)
 		{
-			this.TotalRemaining = totalRemaining;
+			this.TotalRemaining = grossIncome;
 		}
 
 		public double? CharityTax { get; set; }
